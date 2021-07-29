@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+.container {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-image: radial-gradient(circle at top left, #3b3d62, #202135 50%);
+}
+.main {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-linear-gradient(60deg, rgba(61, 63, 102, 0.4) 35%, rgba(0, 0, 0, 0) 35%);
+  min-height: 100vh;
+}
+body{
+  margin: 0;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 45px;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 0;
+  color: #fff;
+}
+.navbar-brand {
+  float: left;
+  display: block;
+}
+.navbar-navigation {
+ /* Nothing */
+  padding: 10px;
+  text-align: right;
+}
+.navbar-navigation a {
+  display: inline-block;
+}
+.navbar-navigation a:hover {
+  color: #fff;
+  border-bottom: solid 4px #45afe3;
+  transition: border-width 0.1s linear;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  */
+ /* grid-gap: 10px;
+  */
+  margin: 0 auto;
+}
+.content {
+  margin: 20px 20%;
+}
+.gradbutton{
+   /* BTN_BG: */
+   background-image: linear-gradient(90deg, #f70078 0%, #ff6a2a 98%);
+   box-shadow: 0 0 12px 0 rgba(228, 52, 79, 0.45);
+   border-radius: 35px;
+  /* SIGN UP: */
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: normal;
+   letter-spacing: 0.35px;
+   padding: 15px 40px;
+   border: 0;
+   /* margin: 90px 10px 20px; */
+   width: 150px;
+   cursor: pointer;
+}
+.gradbutton:hover{
+  background-image: linear-gradient(90deg, #ff6a2a 0%, #f70078 98%);
+}
+.content a{
+  margin-bottom: 130px;
+}
+.episodes{
+    /* BTN_BG: */
+    background-image: linear-gradient(90deg, #f70078 0%, #ff6a2a 98%);
+    box-shadow: 0 0 12px 0 rgba(228, 52, 79, 0.45);
+    border-radius: 35px;
+   /* SIGN UP: */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    letter-spacing: 0.35px;
+    padding: 15px 40px;
+    border: 0;
+    width: 150px;
+    cursor: pointer;
+ }
+ .episodes:hover{
+   background-image: linear-gradient(90deg, #ff6a2a 0%, #f70078 98%);
+ }
+
+.content .pill {
+  background: rgba(69, 175, 227, 0.10);
+  border-radius: 43px;
+  font-size: 10px;
+  color: #45afe3;
+  letter-spacing: 0.35px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 700;
+}
+.content h1 {
+ /* Testing Course: */
+  font-weight: 400;
+  font-size: 42px;
+  padding: 10px 0;
+  letter-spacing: 0.35px;
+  margin: 10px 0 20px 0;
+}
+.content .summary {
+  padding: 0 10px 30px;
+  font-size: 14px;
+  color: #a7a9bc;
+  letter-spacing: 0.35px;
+  line-height: 24.5px;
+  width: 120%;
+}
+.content .note {
+  padding: 30px 0;
+  font-size: 14px;
+  color: #a7a9bc;
+  letter-spacing: 0.35px;
+  line-height: 24.5px;
+  text-align: center;
+  width: 150px;
+}
+.content .signup {
+ /* BTN_BG: */
+  background-image: linear-gradient(90deg, #f70078 0%, #ff6a2a 98%);
+  box-shadow: 0 0 12px 0 rgba(228, 52, 79, 0.45);
+  border-radius: 35px;
+ /* SIGN UP: */
+  font-family: Montserrat-SemiBold;
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 0.35px;
+  padding: 15px 40px;
+  border: 0;
+  margin: 40px 10px 20px;
+  width: 150px;
+  cursor: pointer;
+}
+.image {
+  display: none;
+}
+@media (min-width: 608px) {
+  .image {
+   /* CSS */
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 0;
+    padding-top: 80%;
+   /* Aspect ratio */
+    position: relative;
+    max-width: 424px;
+ }
+  .image svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+}

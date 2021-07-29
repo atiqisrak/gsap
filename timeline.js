@@ -1,0 +1,1 @@
+gsap.to(".episodes", {x: 450, duration:3});
